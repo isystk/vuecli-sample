@@ -29,7 +29,7 @@ $ open http://localhost:3000/
 
 ## Licence
 
-[MIT](https://github.com/isystk/vuejs-sample/LICENCE)
+[MIT](https://github.com/isystk/vuecli-sample/LICENCE)
 
 ## Author
 
