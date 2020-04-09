@@ -4,7 +4,7 @@ VueCLI sample
 ## Description
 
 ## Demo
-https://design.isystk.com/vuejs/
+https://demo.isystk.com/vuejs/
 
 ## VS. 
 
@@ -19,7 +19,7 @@ https://design.isystk.com/vuejs/
 $ yarn install
 
 # static generate
-$ yarn run build
+$ yarn run generate
 
 # server start
 $ yarn run dev

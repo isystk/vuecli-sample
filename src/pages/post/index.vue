@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Header from '../../components/Header.vue';
+import Detail from '../../components/Detail.vue';
 
 export default {
   components: {
