@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import DetailList from '../components/DetailList'
+import top from '../pages/top'
 import company from '../pages/company'
 import post from '../pages/post'
 
@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'top',
-      component: DetailList
+      component: top
     },
     {
       path: '/company',
