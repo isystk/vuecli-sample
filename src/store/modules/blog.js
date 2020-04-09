@@ -1,5 +1,4 @@
 import axios from 'axios'
-import blogData from '../../../public/data/blog.json';
 
 const state = {
   blogs: []
@@ -19,8 +18,10 @@ const mutations = {
 
 const actions = {
   async getBlogList({ commit }) {
-    var isStatic = false;
-    var res = (isStatic) ? blogData : await axios.get("./data/blog.json");
+    // ローカル
+    // var res = await axios.get("./data/blog.json");
+    // 本番
+    var res = await axios.get("/vuejs-qiita-api/data/blog.json");
     commit('setBlogList', res.data)
     return res.data;
   }
