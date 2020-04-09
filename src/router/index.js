@@ -9,20 +9,18 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
-      name: 'top',
       component: top
     },
     {
       path: '/company',
-      name: 'company',
       component: company
     },
     {
       path: '/post/:id',
-      name: 'post',
       component: post
     }
   ]

@@ -18,10 +18,7 @@ const mutations = {
 
 const actions = {
   async getBlogList({ commit }) {
-    // ローカル
-    // var res = await axios.get("./data/blog.json");
-    // 本番
-    var res = await axios.get("/vuejs/data/blog.json");
+    var res = await axios.get(process.env.BASE_URL + "./data/blog.json");
     commit('setBlogList', res.data)
     return res.data;
   }
