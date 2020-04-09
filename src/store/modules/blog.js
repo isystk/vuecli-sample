@@ -21,7 +21,7 @@ const actions = {
     // ローカル
     // var res = await axios.get("./data/blog.json");
     // 本番
-    var res = await axios.get("/vuejs-qiita-api/data/blog.json");
+    var res = await axios.get("/vuejs/data/blog.json");
     commit('setBlogList', res.data)
     return res.data;
   }
